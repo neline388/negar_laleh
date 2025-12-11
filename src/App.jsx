@@ -1,7 +1,7 @@
-import SocialMedia from "./SocialMedia";
-import ContactInfo from "./ContactInfo";
-import Middle from "./Middle";
-import Navigation from "./Navigation";
+import SocialMedia from "./components/SocialMedia";
+import ContactInfo from "./components/ContactInfo";
+import Middle from "./components/Middle";
+import Navigation from "./components/Navigation";
 
 
 
