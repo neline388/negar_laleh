@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Middle.css";
 
-// ⭐ Import images so Vite rewrites URLs correctly
 import defaultImage from "/assets/pictures/Gemini_Generated_Image_viqchtviqchtviqc(1).png";
 import hoverImage from "/assets/pictures/transparent_output(1).png";
 
