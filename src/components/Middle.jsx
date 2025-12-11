@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Middle.css";
 
 export default function Middle() {
-  const defaultImage = "/assets/pictures/Gemini_Generated_Image_viqchtviqchtviqc(1).png";
-  const hoverImage = "/assets/pictures/transparent_output(1).png";
+  const defaultImage = "/portfolio_react/assets/pictures/Gemini_Generated_Image_viqchtviqchtviqc(1).png";
+  const hoverImage = "/portfolio_react/assets/pictures/transparent_output(1).png";
 
   const [imageSrc, setImageSrc] = useState(defaultImage);
 
