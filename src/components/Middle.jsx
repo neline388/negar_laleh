@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import "./Middle.css";
+
+// ⭐ Import images so Vite rewrites URLs correctly
 import defaultImage from "/assets/pictures/Gemini_Generated_Image_viqchtviqchtviqc(1).png";
 import hoverImage from "/assets/pictures/transparent_output(1).png";
 
 export default function Middle() {
   const [imageSrc, setImageSrc] = useState(defaultImage);
-
-  const swapImage = (isHover) => {
-    setImageSrc(isHover ? hoverImage : defaultImage);
-  };
 
   return (
     <div className="mid">
@@ -20,8 +18,8 @@ export default function Middle() {
             src={imageSrc}
             alt="Photo of Me"
             className="overlapping-image"
-            onMouseEnter={() => swapImage(true)}
-            onMouseLeave={() => swapImage(false)}
+            onMouseEnter={() => setImageSrc(hoverImage)}
+            onMouseLeave={() => setImageSrc(defaultImage)}
           />
         </div>
 
