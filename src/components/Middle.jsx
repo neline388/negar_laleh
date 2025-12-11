@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./Middle.css";
+import defaultImage from "/assets/pictures/Gemini_Generated_Image_viqchtviqchtviqc(1).png";
+import hoverImage from "/assets/pictures/transparent_output(1).png";
 
 export default function Middle() {
-  const defaultImage = "/assets/pictures/Gemini_Generated_Image_viqchtviqchtviqc(1).png";
-  const hoverImage = "/assets/pictures/transparent_output(1).png";
-
   const [imageSrc, setImageSrc] = useState(defaultImage);
 
   const swapImage = (isHover) => {
