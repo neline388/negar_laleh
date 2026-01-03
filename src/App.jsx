@@ -1,18 +1,32 @@
-import SocialMedia from "./components/SocialMedia";
-import ContactInfo from "./components/ContactInfo";
-import Middle from "./components/Middle";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navigation from "./components/Navigation";
+import Middle from "./components/Middle";
+import ContactInfo from "./components/ContactInfo";
+import SocialMedia from "./components/SocialMedia";
+import Works from "./components/Works";
 
-
-
-function App() {
+function Home() {
   return (
-    <div className="app">
-      <Navigation />
+    <>
       <Middle />
       <ContactInfo />
       <SocialMedia />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="app">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/works" element={<Works />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

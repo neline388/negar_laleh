@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 
 export default function Navigation() {
@@ -12,11 +13,16 @@ export default function Navigation() {
       <div className="nav-container">
         <ul className="nav-menu">
           <li className="nav-item">
-            <a href="/" className="nav-link">Home</a>
+            <Link to="/" className="nav-link">Home</Link>
           </li>
+
+          <li className="nav-item">
+            <Link to="/works" className="nav-link">Works</Link>
+          </li>
+
           <li className="nav-item">
             <a
-              href="/assets/documents/cv.pdf"
+              href="assets/documents/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-link"
