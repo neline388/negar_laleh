@@ -15,6 +15,11 @@ export default function Works() {
       image: `${base}assets/pictures/polaroid.png`,
       link: "https://neline388.github.io/polaroid/",
     },
+    {
+      title: "Gym",
+      image: `${base}assets/pictures/Gym.png`,
+      link: "https://neline388.github.io/gym/",
+    },
   ];
 
   return (
